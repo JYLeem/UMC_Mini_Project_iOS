@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeViewController" customModule="miniProject_home" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TsQ-Hn-uLN">
+                                <rect key="frame" x="0.0" y="760" width="393" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="CdC-aA-8yA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="   카풀하기" cornerStyle="small">
+                                    <imageReference key="image" image="car.rear.fill" catalog="system" symbolScale="large"/>
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="carpoolButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbt-Fl-ppb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnO-Yd-v6Y">
+                                <rect key="frame" x="303" y="609" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="JTb-X6-hug"/>
+                                    <constraint firstAttribute="height" constant="48" id="zWe-Hs-nHT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="person.fill" catalog="system" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background" cornerRadius="34" strokeWidth="1">
+                                        <color key="strokeColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="profileButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o1M-sM-Atn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nk6-3p-gFG">
+                                <rect key="frame" x="303" y="672" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="6cJ-ST-Y4D"/>
+                                    <constraint firstAttribute="width" constant="48" id="EhV-9o-xDO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ellipsis.message.fill" catalog="system" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background" cornerRadius="34" strokeWidth="1">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="strokeColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="messageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nG1-fE-ifl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TsQ-Hn-uLN" secondAttribute="trailing" id="0Ek-Uy-txf"/>
+                            <constraint firstItem="UnO-Yd-v6Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="550" id="15d-qJ-6zW"/>
+                            <constraint firstItem="TsQ-Hn-uLN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="5" id="6Tw-gy-OJd"/>
+                            <constraint firstItem="UnO-Yd-v6Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="303" id="9Nw-HZ-L6f"/>
+                            <constraint firstItem="TsQ-Hn-uLN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A9C-4w-aSJ"/>
+                            <constraint firstItem="nk6-3p-gFG" firstAttribute="top" secondItem="UnO-Yd-v6Y" secondAttribute="bottom" constant="15" id="m1l-LU-sTx"/>
+                            <constraint firstItem="nk6-3p-gFG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="303" id="wp3-Gv-UdY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.343511450381679" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car.rear.fill" catalog="system" width="128" height="95"/>
+        <image name="ellipsis.message.fill" catalog="system" width="128" height="114"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
