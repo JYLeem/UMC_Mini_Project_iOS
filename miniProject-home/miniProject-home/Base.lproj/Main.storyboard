@@ -30,7 +30,8 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="carpoolButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbt-Fl-ppb"/>
+                                    <action selector="carpoolButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7nr-yK-dMj"/>
+                                    <segue destination="Olm-XT-fnm" kind="presentation" id="0BX-Eu-Gjs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnO-Yd-v6Y">
@@ -46,7 +47,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="profileButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o1M-sM-Atn"/>
+                                    <action selector="profileButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E0W-kY-00w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nk6-3p-gFG">
@@ -64,7 +65,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="messageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nG1-fE-ifl"/>
+                                    <action selector="messageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="40e-q0-CBw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,6 +85,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5.343511450381679" y="-2.1126760563380285"/>
+        </scene>
+        <!--Station View Controller-->
+        <scene sceneID="6eD-Qq-EgJ">
+            <objects>
+                <viewController storyboardIdentifier="StationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Olm-XT-fnm" customClass="StationViewController" customModule="miniProject_home" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="87u-oY-71S">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OS0-2h-th8">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bAp-dG-dEh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bAp-dG-dEh" firstAttribute="trailing" secondItem="OS0-2h-th8" secondAttribute="trailing" id="135-F0-Som"/>
+                            <constraint firstItem="OS0-2h-th8" firstAttribute="top" secondItem="bAp-dG-dEh" secondAttribute="top" id="1UC-zx-ttf"/>
+                            <constraint firstItem="bAp-dG-dEh" firstAttribute="bottom" secondItem="OS0-2h-th8" secondAttribute="bottom" id="8kd-gf-zTv"/>
+                            <constraint firstItem="OS0-2h-th8" firstAttribute="leading" secondItem="bAp-dG-dEh" secondAttribute="leading" id="FDp-sc-LhA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="OS0-2h-th8" id="gzJ-tI-7Ph"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ml0-DK-tEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720" y="-2"/>
+        </scene>
+        <!--Time View Controller-->
+        <scene sceneID="sbT-cX-b10">
+            <objects>
+                <viewController storyboardIdentifier="TimeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rKm-5m-XPw" customClass="TimeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mmS-C4-52F">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dEf-ds-fDJ">
+                                <rect key="frame" x="76" y="310" width="240" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qNc-zk-Mov"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="dEf-ds-fDJ" id="uaI-IK-xBt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hK-rW-z49" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1487.7862595419847" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
