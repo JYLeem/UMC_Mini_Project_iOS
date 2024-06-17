@@ -42,7 +42,7 @@ class StationViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     @objc func handleTap(_ gestureRecognizer: UITapGestureRecognizer) {
-        print("hello")
+      
         
 
         guard let tappedCell = gestureRecognizer.view as? UITableViewCell, let _ = tableView.indexPath(for: tappedCell) else {
