@@ -27,44 +27,32 @@ class StationViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         // 셀 가져오기
         let stationCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         stationCell.textLabel?.text = "역 \(indexPath.row+1)번 출구"
        
-        
-        // 제스처 생성
-        let TapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-        TapGestureRecognizer.numberOfTapsRequired = 1
-        stationCell.addGestureRecognizer(TapGestureRecognizer)
-        stationCell.isUserInteractionEnabled = true
+        // 셀의 선택 스타일 설정
+        stationCell.selectionStyle = .default
         
         return stationCell
     }
     
-    @objc func handleTap(_ gestureRecognizer: UITapGestureRecognizer) {
-      
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-
-        guard let tappedCell = gestureRecognizer.view as? UITableViewCell, let _ = tableView.indexPath(for: tappedCell) else {
-                return
-        }
-        
-        // 선택된 상태를 토글
-        if tappedCell.isSelected {
-            tappedCell.setSelected(false, animated: true)
-        } else {
-            tappedCell.setSelected(true, animated: true)
-        }
-        
+       // 선택된 셀에 대한 처리
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let timeVC = storyboard.instantiateViewController(withIdentifier: "TimeVC") as? TimeViewController else {
                 return
             }
         
-        
         // 모달로 표시
         timeVC.modalPresentationStyle = .overCurrentContext
         present(timeVC, animated: true, completion: nil)
+        
+        // 셀 선택 해제
+        tableView.deselectRow(at: indexPath, animated: true)
+        
     }
 }
 
