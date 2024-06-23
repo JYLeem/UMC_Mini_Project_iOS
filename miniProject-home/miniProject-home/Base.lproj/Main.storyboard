@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Image references" minToolsVersion="12.0"/>
-        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -66,33 +65,19 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5G-Lw-3Jt">
-                                <rect key="frame" x="0.0" y="59" width="393" height="550"/>
-                                <standardMapConfiguration key="preferredConfiguration"/>
-                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TsQ-Hn-uLN" secondAttribute="trailing" id="0Ek-Uy-txf"/>
                             <constraint firstItem="UnO-Yd-v6Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="550" id="15d-qJ-6zW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="w5G-Lw-3Jt" secondAttribute="bottom" constant="-550" id="60B-gt-3ou"/>
                             <constraint firstItem="TsQ-Hn-uLN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="5" id="6Tw-gy-OJd"/>
                             <constraint firstItem="UnO-Yd-v6Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="303" id="9Nw-HZ-L6f"/>
                             <constraint firstItem="TsQ-Hn-uLN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A9C-4w-aSJ"/>
-                            <constraint firstItem="w5G-Lw-3Jt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TT7-ig-wku"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w5G-Lw-3Jt" secondAttribute="trailing" id="iZZ-we-9hq"/>
                             <constraint firstItem="nk6-3p-gFG" firstAttribute="top" secondItem="UnO-Yd-v6Y" secondAttribute="bottom" constant="15" id="m1l-LU-sTx"/>
-                            <constraint firstItem="w5G-Lw-3Jt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vuv-rC-hiw"/>
                             <constraint firstItem="nk6-3p-gFG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="303" id="wp3-Gv-UdY"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="CarpoolButton" destination="TsQ-Hn-uLN" id="Lgf-5o-7O0"/>
-                        <outlet property="map" destination="w5G-Lw-3Jt" id="I0z-dg-MEl"/>
-                        <outlet property="messageButton" destination="nk6-3p-gFG" id="m3K-8V-u5p"/>
-                        <outlet property="profileButton" destination="UnO-Yd-v6Y" id="hoe-RF-0PI"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
