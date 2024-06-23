@@ -11,8 +11,9 @@ import InputBarAccessoryView
 
 class ChatRoomViewController : MessagesViewController {
     let channel: Channel
-    var sender = Sender(senderId: "any_unique_id", displayName: "jake")
-        var messages = [Message]()
+    var sender = Sender(senderId: "self", displayName: "Leem")
+    var messages = [Message]()
+    
     
     init(channel: Channel) {
       self.channel = channel
@@ -20,38 +21,30 @@ class ChatRoomViewController : MessagesViewController {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    @IBAction func backButton(_ sender: Any) {
-        print("hello22")
-    }
-    
-    @IBAction func reportPerson(_ sender: Any) {
-        print("hello")
-    }
-    
-    
-    
+        self.channel = Channel(name: "Default Channel")  // 기본 채널 설정
+        super.init(coder: coder)    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         confirmDelegates()
         configure()
         setupMessageInputBar()
         removeOutgoingMessageAvatars()
+        addSampleMessages()
+        setupNavigationBar()
     }
     
     private func confirmDelegates() {
         messagesCollectionView.messagesDataSource = self
         messagesCollectionView.messagesLayoutDelegate = self
         messagesCollectionView.messagesDisplayDelegate = self
-        
+ 
         messageInputBar.delegate = self
     }
     
     private func configure() {
-        title = channel.name
         navigationController?.navigationBar.prefersLargeTitles = false
     }
     
@@ -69,12 +62,57 @@ class ChatRoomViewController : MessagesViewController {
         layout.setMessageOutgoingMessageTopLabelAlignment(outgoingLabelAlignment)
     }
     
-    
     private func insertNewMessage(_ message: Message) {
         messages.append(message)
         messages.sort()
-        
         messagesCollectionView.reloadData()
+    }
+    
+    private func setupNavigationBar() {
+        navigationItem.title = channel.name
+        
+        let backButtonImage = UIImage(named: "backIcon")?.withRenderingMode(.alwaysOriginal)
+        let backButton = UIBarButtonItem(image: backButtonImage, style: .plain, target: self, action: #selector(backButtonPressed))
+        
+        let reportButtonImage = UIImage(named: "reportImage")?.withRenderingMode(.alwaysOriginal)
+        let reportButton = UIBarButtonItem(image: reportButtonImage, style: .plain, target: self, action: #selector(reportButtonPressed))
+        
+        
+        navigationItem.leftBarButtonItem = backButton
+        navigationItem.rightBarButtonItem = reportButton
+    }
+    
+    @objc private func backButtonPressed() {
+        print("Back button pressed")
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @objc private func reportButtonPressed() {
+        let alertController = UIAlertController(title: nil, message: "112 연결중...", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            
+            present(alertController, animated: true, completion: nil)
+    }
+    
+    private func addSampleMessages() {
+        let sampleSenders = [
+            Sender(senderId: "user1", displayName: "Alice"),
+            Sender(senderId: "user2", displayName: "Bob"),
+            Sender(senderId: "user3", displayName: "Charlie"),
+            sender  // Self
+        ]
+        
+        let sampleMessages = [
+            Message(content: "Hello everyone!", sender: sampleSenders[0]),
+            Message(content: "Hi Alice!", sender: sampleSenders[1]),
+            Message(content: "Hey Bob and Alice!", sender: sampleSenders[2]),
+            Message(content: "Hello Bob, Alice, and Charlie!", sender: sampleSenders[3])
+        ]
+        
+        messages.append(contentsOf: sampleMessages)
+        messagesCollectionView.reloadData()
+        messagesCollectionView.scrollToLastItem()
     }
 }
 
@@ -82,10 +120,6 @@ extension ChatRoomViewController: MessagesDataSource {
     var currentSender: any MessageKit.SenderType {
         return sender
     }
-    
-//    func currentSender() -> SenderType {
-//        return sender
-//    }
     
     func numberOfSections(in messagesCollectionView: MessagesCollectionView) -> Int {
         return messages.count
@@ -100,6 +134,7 @@ extension ChatRoomViewController: MessagesDataSource {
         return NSAttributedString(string: name, attributes: [.font: UIFont.preferredFont(forTextStyle: .caption1),
                                                              .foregroundColor: UIColor(white: 0.3, alpha: 1)])
     }
+    
 }
 
 extension ChatRoomViewController: MessagesLayoutDelegate {
@@ -121,7 +156,7 @@ extension ChatRoomViewController: MessagesDisplayDelegate {
     }
     
     func textColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
-        return isFromCurrentSender(message: message) ? .black : .white
+        return isFromCurrentSender(message: message) ? .black : .black
     }
     
     // 말풍선의 꼬리 모양 방향
@@ -133,17 +168,14 @@ extension ChatRoomViewController: MessagesDisplayDelegate {
 
 extension ChatRoomViewController: InputBarAccessoryViewDelegate {
     func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
-        let message = Message(content: text)
-        
-        // TODO
-//        saveMessageAndScrollToLastItem(message)
-        
+        let message = Message(content: text, sender: sender)
+
         insertNewMessage(message)
         inputBar.inputTextView.text.removeAll()
     }
 }
 
 extension UIColor {
-    static let primary = UIColor.systemBlue // 원하는 색상으로 변경
-    static let incomingMessageBackground = UIColor.systemGray // 원하는 색상으로 변경
+    static let primary = UIColor(red: 171/255.0, green: 215/255.0, blue: 255/255.0, alpha: 1.0)
+    static let incomingMessageBackground = UIColor(red: 210/255.0, green: 210/255.0, blue: 210/255.0, alpha: 1.0)
 }
