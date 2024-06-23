@@ -7,23 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D9A4C852C2851C10076BDE9 /* StationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A4C762C2851C10076BDE9 /* StationTableViewController.swift */; };
+		9D9A4C862C2851C10076BDE9 /* MatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D9A4C772C2851C10076BDE9 /* MatchTableViewCell.xib */; };
+		9D9A4C872C2851C10076BDE9 /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A4C782C2851C10076BDE9 /* TimeTableViewCell.swift */; };
+		9D9A4C882C2851C10076BDE9 /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D9A4C792C2851C10076BDE9 /* TimeTableViewCell.xib */; };
+		9D9A4C892C2851C10076BDE9 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A4C7B2C2851C10076BDE9 /* MatchViewController.swift */; };
+		9D9A4C8D2C2851C10076BDE9 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A4C7F2C2851C10076BDE9 /* PersonViewController.swift */; };
+		9D9A4C8E2C2851C10076BDE9 /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A4C802C2851C10076BDE9 /* StationViewController.swift */; };
+		9D9A4C8F2C2851C10076BDE9 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A4C812C2851C10076BDE9 /* TimeViewController.swift */; };
+		9D9A4C902C2851C10076BDE9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A4C822C2851C10076BDE9 /* HomeViewController.swift */; };
+		9D9A4C912C2851C10076BDE9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A4C832C2851C10076BDE9 /* TableViewCell.swift */; };
+		9D9A4C9E2C2851FE0076BDE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A4C962C2851FE0076BDE9 /* ViewController.swift */; };
+		9D9A4C9F2C2851FE0076BDE9 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A4C972C2851FE0076BDE9 /* MyPageViewController.swift */; };
+		9D9A4CA02C2851FE0076BDE9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A4C982C2851FE0076BDE9 /* SecondViewController.swift */; };
+		9D9A4CA12C2851FE0076BDE9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A4C992C2851FE0076BDE9 /* LoginViewController.swift */; };
+		9DBDBB0B2C27CF2A0081DF17 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDBB0A2C27CF2A0081DF17 /* Message.swift */; };
+		9DBDBB0F2C27DDF40081DF17 /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDBB0E2C27DDF40081DF17 /* Sender.swift */; };
 		9DC544392C1FEF950032C33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC544382C1FEF950032C33C /* AppDelegate.swift */; };
 		9DC5443B2C1FEF950032C33C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC5443A2C1FEF950032C33C /* SceneDelegate.swift */; };
-		9DC5443D2C1FEF950032C33C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC5443C2C1FEF950032C33C /* ViewController.swift */; };
 		9DC544402C1FEF950032C33C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9DC5443F2C1FEF950032C33C /* Base */; };
 		9DC544422C1FEF960032C33C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC544412C1FEF960032C33C /* Assets.xcassets */; };
 		9DC544452C1FEF960032C33C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9DC544442C1FEF960032C33C /* Base */; };
+		9DC5444E2C1FFC300032C33C /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9DC5444D2C1FFC300032C33C /* MessageKit */; };
+		9DC544512C2010EB0032C33C /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC544502C2010EB0032C33C /* Channel.swift */; };
+		9DC9D0172C2178A8007DCFDC /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9D0162C2178A8007DCFDC /* ChatRoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D9A4C762C2851C10076BDE9 /* StationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationTableViewController.swift; sourceTree = "<group>"; };
+		9D9A4C772C2851C10076BDE9 /* MatchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatchTableViewCell.xib; sourceTree = "<group>"; };
+		9D9A4C782C2851C10076BDE9 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
+		9D9A4C792C2851C10076BDE9 /* TimeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeTableViewCell.xib; sourceTree = "<group>"; };
+		9D9A4C7B2C2851C10076BDE9 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		9D9A4C7F2C2851C10076BDE9 /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		9D9A4C802C2851C10076BDE9 /* StationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
+		9D9A4C812C2851C10076BDE9 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		9D9A4C822C2851C10076BDE9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9D9A4C832C2851C10076BDE9 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9D9A4C962C2851FE0076BDE9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D9A4C972C2851FE0076BDE9 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		9D9A4C982C2851FE0076BDE9 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9D9A4C992C2851FE0076BDE9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9DBDBB0A2C27CF2A0081DF17 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		9DBDBB0E2C27DDF40081DF17 /* Sender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sender.swift; sourceTree = "<group>"; };
 		9DC544352C1FEF950032C33C /* UMC_MiniProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMC_MiniProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC544382C1FEF950032C33C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DC5443A2C1FEF950032C33C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9DC5443C2C1FEF950032C33C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DC5443F2C1FEF950032C33C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DC544412C1FEF960032C33C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC544442C1FEF960032C33C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DC544462C1FEF960032C33C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DC544502C2010EB0032C33C /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		9DC9D0162C2178A8007DCFDC /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +66,75 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC5444E2C1FFC300032C33C /* MessageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D9A4C732C2851800076BDE9 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				9DBDBB0D2C27DDDE0081DF17 /* Resource */,
+				9DBDBB0C2C27DDC90081DF17 /* Controller */,
+				9DC5444F2C2010CE0032C33C /* Model */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		9D9A4C742C2851910076BDE9 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				9D9A4C7A2C2851C10076BDE9 /* Cell */,
+				9D9A4C822C2851C10076BDE9 /* HomeViewController.swift */,
+				9D9A4C812C2851C10076BDE9 /* TimeViewController.swift */,
+				9D9A4C7B2C2851C10076BDE9 /* MatchViewController.swift */,
+				9D9A4C7F2C2851C10076BDE9 /* PersonViewController.swift */,
+				9D9A4C762C2851C10076BDE9 /* StationTableViewController.swift */,
+				9D9A4C802C2851C10076BDE9 /* StationViewController.swift */,
+				9D9A4C832C2851C10076BDE9 /* TableViewCell.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		9D9A4C7A2C2851C10076BDE9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9D9A4C772C2851C10076BDE9 /* MatchTableViewCell.xib */,
+				9D9A4C782C2851C10076BDE9 /* TimeTableViewCell.swift */,
+				9D9A4C792C2851C10076BDE9 /* TimeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9D9A4C922C2851F20076BDE9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9D9A4C992C2851FE0076BDE9 /* LoginViewController.swift */,
+				9D9A4C972C2851FE0076BDE9 /* MyPageViewController.swift */,
+				9D9A4C982C2851FE0076BDE9 /* SecondViewController.swift */,
+				9D9A4C962C2851FE0076BDE9 /* ViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9DBDBB0C2C27DDC90081DF17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DC9D0162C2178A8007DCFDC /* ChatRoomViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9DBDBB0D2C27DDDE0081DF17 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9DBDBB0E2C27DDF40081DF17 /* Sender.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		9DC5442C2C1FEF950032C33C = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +154,26 @@
 		9DC544372C1FEF950032C33C /* UMC_MiniProject */ = {
 			isa = PBXGroup;
 			children = (
+				9D9A4C922C2851F20076BDE9 /* Login */,
+				9D9A4C742C2851910076BDE9 /* Map */,
+				9D9A4C732C2851800076BDE9 /* Socket */,
+				9DC5443E2C1FEF950032C33C /* Main.storyboard */,
 				9DC544382C1FEF950032C33C /* AppDelegate.swift */,
 				9DC5443A2C1FEF950032C33C /* SceneDelegate.swift */,
-				9DC5443C2C1FEF950032C33C /* ViewController.swift */,
-				9DC5443E2C1FEF950032C33C /* Main.storyboard */,
 				9DC544412C1FEF960032C33C /* Assets.xcassets */,
 				9DC544432C1FEF960032C33C /* LaunchScreen.storyboard */,
 				9DC544462C1FEF960032C33C /* Info.plist */,
 			);
 			path = UMC_MiniProject;
+			sourceTree = "<group>";
+		};
+		9DC5444F2C2010CE0032C33C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DC544502C2010EB0032C33C /* Channel.swift */,
+				9DBDBB0A2C27CF2A0081DF17 /* Message.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +192,9 @@
 			dependencies = (
 			);
 			name = UMC_MiniProject;
+			packageProductDependencies = (
+				9DC5444D2C1FFC300032C33C /* MessageKit */,
+			);
 			productName = UMC_MiniProject;
 			productReference = 9DC544352C1FEF950032C33C /* UMC_MiniProject.app */;
 			productType = "com.apple.product-type.application";
@@ -94,6 +206,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					reportIcon.png,
+				);
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
@@ -111,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 9DC5442C2C1FEF950032C33C;
+			packageReferences = (
+				9DC5444C2C1FFC300032C33C /* XCRemoteSwiftPackageReference "MessageKit" */,
+			);
 			productRefGroup = 9DC544362C1FEF950032C33C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +243,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D9A4C862C2851C10076BDE9 /* MatchTableViewCell.xib in Resources */,
 				9DC544422C1FEF960032C33C /* Assets.xcassets in Resources */,
 				9DC544452C1FEF960032C33C /* Base in Resources */,
+				9D9A4C882C2851C10076BDE9 /* TimeTableViewCell.xib in Resources */,
 				9DC544402C1FEF950032C33C /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +258,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DC5443D2C1FEF950032C33C /* ViewController.swift in Sources */,
+				9D9A4C9E2C2851FE0076BDE9 /* ViewController.swift in Sources */,
+				9D9A4C912C2851C10076BDE9 /* TableViewCell.swift in Sources */,
+				9D9A4C8E2C2851C10076BDE9 /* StationViewController.swift in Sources */,
+				9DC544512C2010EB0032C33C /* Channel.swift in Sources */,
 				9DC544392C1FEF950032C33C /* AppDelegate.swift in Sources */,
+				9DBDBB0B2C27CF2A0081DF17 /* Message.swift in Sources */,
+				9D9A4C902C2851C10076BDE9 /* HomeViewController.swift in Sources */,
+				9D9A4C852C2851C10076BDE9 /* StationTableViewController.swift in Sources */,
+				9D9A4C872C2851C10076BDE9 /* TimeTableViewCell.swift in Sources */,
+				9D9A4CA12C2851FE0076BDE9 /* LoginViewController.swift in Sources */,
+				9D9A4C8D2C2851C10076BDE9 /* PersonViewController.swift in Sources */,
 				9DC5443B2C1FEF950032C33C /* SceneDelegate.swift in Sources */,
+				9D9A4C892C2851C10076BDE9 /* MatchViewController.swift in Sources */,
+				9D9A4C9F2C2851FE0076BDE9 /* MyPageViewController.swift in Sources */,
+				9D9A4C8F2C2851C10076BDE9 /* TimeViewController.swift in Sources */,
+				9D9A4CA02C2851FE0076BDE9 /* SecondViewController.swift in Sources */,
+				9DBDBB0F2C27DDF40081DF17 /* Sender.swift in Sources */,
+				9DC9D0172C2178A8007DCFDC /* ChatRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +496,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9DC5444C2C1FFC300032C33C /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DC5444D2C1FFC300032C33C /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DC5444C2C1FFC300032C33C /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9DC5442D2C1FEF950032C33C /* Project object */;
 }
