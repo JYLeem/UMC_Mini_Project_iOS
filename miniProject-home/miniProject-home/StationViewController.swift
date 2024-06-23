@@ -38,20 +38,22 @@ class StationViewController: UIViewController, UITableViewDelegate, UITableViewD
         return stationCell
     }
     
+    // 셀 선택시 TimeVC로 화면 전환
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // 셀 선택 해제
+        tableView.deselectRow(at: indexPath, animated: true)
         
        // 선택된 셀에 대한 처리
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         guard let timeVC = storyboard.instantiateViewController(withIdentifier: "TimeVC") as? TimeViewController else {
                 return
             }
-        
+        navigationController?.pushViewController(timeVC, animated: true)
         // 모달로 표시
         timeVC.modalPresentationStyle = .overCurrentContext
+        timeVC.modalTransitionStyle = .crossDissolve
         present(timeVC, animated: true, completion: nil)
-        
-        // 셀 선택 해제
-        tableView.deselectRow(at: indexPath, animated: true)
         
     }
 }

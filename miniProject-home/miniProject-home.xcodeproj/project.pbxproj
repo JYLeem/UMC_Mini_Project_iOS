@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		972E3F9D2C2142660088E405 /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E3F9B2C2142660088E405 /* TimeTableViewCell.swift */; };
+		97171BE12C270BC2005F106C /* MatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97171BDF2C270BC2005F106C /* MatchTableViewCell.xib */; };
 		972E3F9E2C2142660088E405 /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972E3F9C2C2142660088E405 /* TimeTableViewCell.xib */; };
+		97672FCA2C2806BA00530B8F /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97672FC92C2806BA00530B8F /* MatchViewController.swift */; };
+		97672FCE2C282FF000530B8F /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97672FCD2C282FF000530B8F /* TimeTableViewCell.swift */; };
+		97672FD02C2832A400530B8F /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97672FCF2C2832A400530B8F /* PersonViewController.swift */; };
 		977F2FB12C1FFBE90033B40D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F2FB02C1FFBE90033B40D /* HomeViewController.swift */; };
 		977F2FB72C1FFBFB0033B40D /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F2FB42C1FFBFB0033B40D /* StationViewController.swift */; };
 		977F2FB92C200EB50033B40D /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F2FB82C200EB50033B40D /* TimeViewController.swift */; };
@@ -40,8 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		972E3F9B2C2142660088E405 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
+		97171BDF2C270BC2005F106C /* MatchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MatchTableViewCell.xib; path = "miniProject-home/Cell/MatchTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		972E3F9C2C2142660088E405 /* TimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeTableViewCell.xib; sourceTree = "<group>"; };
+		97672FC92C2806BA00530B8F /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		97672FCD2C282FF000530B8F /* TimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
+		97672FCF2C2832A400530B8F /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		977F2FB02C1FFBE90033B40D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		977F2FB42C1FFBFB0033B40D /* StationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
 		977F2FB82C200EB50033B40D /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
@@ -84,14 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		972E3F9F2C2169D40088E405 /* Time */ = {
+		972E3F9F2C2169D40088E405 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				977F2FB82C200EB50033B40D /* TimeViewController.swift */,
-				972E3F9B2C2142660088E405 /* TimeTableViewCell.swift */,
+				97672FCD2C282FF000530B8F /* TimeTableViewCell.swift */,
 				972E3F9C2C2142660088E405 /* TimeTableViewCell.xib */,
+				97171BDF2C270BC2005F106C /* MatchTableViewCell.xib */,
 			);
-			path = Time;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		97BC4EEB2C02E3ED00457C04 = {
@@ -119,10 +125,13 @@
 			children = (
 				97BC4EF72C02E3ED00457C04 /* AppDelegate.swift */,
 				97BC4EF92C02E3ED00457C04 /* SceneDelegate.swift */,
+				97BC4EFD2C02E3ED00457C04 /* Main.storyboard */,
 				977F2FB02C1FFBE90033B40D /* HomeViewController.swift */,
 				977F2FB42C1FFBFB0033B40D /* StationViewController.swift */,
-				972E3F9F2C2169D40088E405 /* Time */,
-				97BC4EFD2C02E3ED00457C04 /* Main.storyboard */,
+				977F2FB82C200EB50033B40D /* TimeViewController.swift */,
+				97672FCF2C2832A400530B8F /* PersonViewController.swift */,
+				97672FC92C2806BA00530B8F /* MatchViewController.swift */,
+				972E3F9F2C2169D40088E405 /* Cell */,
 				97BC4F002C02E3EE00457C04 /* Assets.xcassets */,
 				97BC4F022C02E3EE00457C04 /* LaunchScreen.storyboard */,
 				97BC4F052C02E3EE00457C04 /* Info.plist */,
@@ -251,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97171BE12C270BC2005F106C /* MatchTableViewCell.xib in Resources */,
 				972E3F9E2C2142660088E405 /* TimeTableViewCell.xib in Resources */,
 				97BC4F012C02E3EE00457C04 /* Assets.xcassets in Resources */,
 				97BC4F042C02E3EE00457C04 /* Base in Resources */,
@@ -279,9 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97672FCE2C282FF000530B8F /* TimeTableViewCell.swift in Sources */,
 				97BC4EF82C02E3ED00457C04 /* AppDelegate.swift in Sources */,
+				97672FCA2C2806BA00530B8F /* MatchViewController.swift in Sources */,
+				97672FD02C2832A400530B8F /* PersonViewController.swift in Sources */,
 				977F2FB92C200EB50033B40D /* TimeViewController.swift in Sources */,
-				972E3F9D2C2142660088E405 /* TimeTableViewCell.swift in Sources */,
 				97BC4EFA2C02E3ED00457C04 /* SceneDelegate.swift in Sources */,
 				977F2FB72C1FFBFB0033B40D /* StationViewController.swift in Sources */,
 				977F2FB12C1FFBE90033B40D /* HomeViewController.swift in Sources */,
