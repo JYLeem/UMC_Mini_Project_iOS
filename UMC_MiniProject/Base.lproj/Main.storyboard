@@ -11,8 +11,8 @@
         <!--ChatRoomViewController-->
         <scene sceneID="MW6-nf-2wV">
             <objects>
-                <viewController storyboardIdentifier="ChatRoomViewController" title="ChatRoomViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6gq-jY-osp" customClass="ChatRromViewController" customModule="UMC_MiniProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T6a-ed-NbM" customClass="ChatRoomViewController">
+                <viewController storyboardIdentifier="ChatRoomViewController" title="ChatRoomViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6gq-jY-osp" customClass="ChatRoomViewController" customModule="UMC_MiniProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T6a-ed-NbM" customClass="ChatRromViewController" customModule="UMC_MiniProject" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -31,6 +31,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
                                         <connections>
+                                            <action selector="backButton:" destination="T6a-ed-NbM" eventType="touchUpInside" id="Fv4-Uk-wZW"/>
                                             <action selector="backButton:" destination="6gq-jY-osp" eventType="touchUpInside" id="eNn-xr-tkk"/>
                                         </connections>
                                     </button>
@@ -40,6 +41,7 @@
                                         <buttonConfiguration key="configuration" style="plain" image="reportImage"/>
                                         <connections>
                                             <action selector="reportPerson:" destination="6gq-jY-osp" eventType="touchUpInside" id="Pw2-0v-hQQ"/>
+                                            <action selector="reportPerson:" destination="T6a-ed-NbM" eventType="touchUpInside" id="brV-xr-1Eg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -60,27 +62,28 @@
                                     <constraint firstItem="3j6-fG-4Ms" firstAttribute="centerY" secondItem="iKI-rF-dys" secondAttribute="centerY" id="uW0-uq-J1r"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="scx-Qn-mcp">
-                                <rect key="frame" x="0.0" y="104" width="393" height="714"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCq-ed-U55">
+                                <rect key="frame" x="129" y="395" width="134" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="채팅방 실행"/>
+                                <connections>
+                                    <action selector="roomButton:" destination="6gq-jY-osp" eventType="touchUpInside" id="uUM-aS-QfC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Tj7-vZ-vwY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="scx-Qn-mcp" firstAttribute="leading" secondItem="Tj7-vZ-vwY" secondAttribute="leading" id="0A0-93-gEt"/>
                             <constraint firstItem="iKI-rF-dys" firstAttribute="top" secondItem="Tj7-vZ-vwY" secondAttribute="top" id="3F4-kV-fY1"/>
-                            <constraint firstItem="scx-Qn-mcp" firstAttribute="trailing" secondItem="Tj7-vZ-vwY" secondAttribute="trailing" id="Aet-O3-Ndf"/>
                             <constraint firstItem="iKI-rF-dys" firstAttribute="leading" secondItem="Tj7-vZ-vwY" secondAttribute="leading" id="VyW-vm-piv"/>
-                            <constraint firstItem="scx-Qn-mcp" firstAttribute="top" secondItem="iKI-rF-dys" secondAttribute="bottom" id="Zk0-hI-Ks0"/>
                             <constraint firstItem="iKI-rF-dys" firstAttribute="trailing" secondItem="Tj7-vZ-vwY" secondAttribute="trailing" id="m4r-KF-2cF"/>
-                            <constraint firstItem="scx-Qn-mcp" firstAttribute="bottom" secondItem="Tj7-vZ-vwY" secondAttribute="bottom" id="u4d-hf-YQW"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06l-aJ-xIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-654.19847328244271" y="-873.23943661971839"/>
+            <point key="canvasLocation" x="-1005.3435114503816" y="-1055.6338028169014"/>
         </scene>
     </scenes>
     <resources>
