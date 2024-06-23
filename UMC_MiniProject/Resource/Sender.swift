@@ -5,4 +5,10 @@
 //  Created by Jinyoung Leem on 6/23/24.
 //
 
-import Foundation
+
+import MessageKit
+
+struct Sender: SenderType {
+    var senderId: String
+    var displayName: String
+}
